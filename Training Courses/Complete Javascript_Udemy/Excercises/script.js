@@ -77,6 +77,7 @@ let function = 23;
 /************
  * Operator precedence
  */
+/*
 let now = 2019;
 let yearJohn = 1981;
 let fullAge = 18;
@@ -101,3 +102,89 @@ x += 10;
 console.log(x);
 x ++;
 console.log(x);
+
+*/
+
+/*****
+ * If/else statements
+ */
+
+// let firstName = 'John';
+// let civilStatus = 'Single';
+
+// if (civilStatus === 'Married') {
+//     console.log(firstName + ' is married.');
+// } else {
+//     console.log(firstName + 'is not married yet')
+// };
+
+// let isMarried = false;
+// if (isMarried) {
+//     console.log(firstName + ' is married')
+// } else{
+//     console.log(firstName + ' will soon be married, maybe, hopefully')
+// };
+
+// let massMark, heightMark, bmi_Mark, massJohn, heightJohn, bmi_John;
+// massMark = 66;
+// heightMark = 1.82;
+// massJohn = 105;
+// heightJohn = 1.95;
+
+
+// bmi_Mark = massMark / Math.pow(heightMark,2);
+// console.log(bmi_Mark);
+
+// bmi_John = massJohn / Math.pow(heightJohn,2);
+// console.log(bmi_John);
+
+// if (bmi_Mark > bmi_John) {
+//     console.log('Mark is fatter that John!');
+// } else {
+//     console.log('John is fatter that Mark!');
+// };
+
+/**********
+ * Bolean Logic
+ */
+
+ let age = 15;
+
+ if (age <= 13) {
+    console.log('This is a boy.');
+ } else if (age >= 13 && age < 20) {
+    console.log('This is a teenager');
+ } else if (age > 20 || age < 30) {
+    console.log('This is a young man');
+ } else {
+     console.log('This is a man!');
+ };
+
+ /***************
+  * Ternery & Switch
+  */
+
+//   age >= 18 ? console.log('You may dring beer') : console.log('You may drink juice') 
+
+//   let drink = age >= 18 ? 'Drinks Beer' : 'Drinks Juice';
+//   console.log(drink);  
+
+/*
+switch (true) {
+    case age <= 13 :
+        console.log('This is a boy.');
+        break;
+    case age >= 13 && age < 20 :
+        console.log('This is a teenager');
+        break;
+    case age > 20 || age < 30 :
+        console.log('This is a young man');
+        break;
+    
+    default:
+        console.log('This is a man');                
+};*/
+
+let height = 0;
+
+height || height === 0 ? console.log('Variable is defined') : console.log('Variable is not defined');
