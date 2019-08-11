@@ -250,4 +250,29 @@ console.log(whatDoYouDo('muppett', 'Warren'));
  * Arrays
  */
 
- 
+ let names = ['Mike', 'John', 'Jane'];
+ let year = [1990, 2001, 2016];
+
+ console.log(names);
+ console.log(year.length);
+
+ names[1] = 'Ben';
+ names[names.length] = 'Ben';
+ console.log(names);
+
+ //Different Data Types
+let john = ['John', 'Smith', 1990, 'teacher', false];
+
+john.push('blue');
+john.unshift('Mr');
+
+john.pop();
+john.shift();
+john.push('designer');
+
+console.log(john);
+console.log(john.indexOf('Smith'));
+
+let isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer.' : 'John IS a designer.';
+
+console.log(isDesigner);
