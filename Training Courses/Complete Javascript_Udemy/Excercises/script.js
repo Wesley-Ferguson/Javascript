@@ -148,17 +148,17 @@ console.log(x);
  * Bolean Logic
  */
 
- let age = 15;
+//  let age = 15;
 
- if (age <= 13) {
-    console.log('This is a boy.');
- } else if (age >= 13 && age < 20) {
-    console.log('This is a teenager');
- } else if (age > 20 || age < 30) {
-    console.log('This is a young man');
- } else {
-     console.log('This is a man!');
- };
+//  if (age <= 13) {
+//     console.log('This is a boy.');
+//  } else if (age >= 13 && age < 20) {
+//     console.log('This is a teenager');
+//  } else if (age > 20 || age < 30) {
+//     console.log('This is a young man');
+//  } else {
+//      console.log('This is a man!');
+//  };
 
  /***************
   * Ternery & Switch
@@ -185,6 +185,69 @@ switch (true) {
         console.log('This is a man');                
 };*/
 
-let height = 0;
+// let height = 0;
 
-height || height === 0 ? console.log('Variable is defined') : console.log('Variable is not defined');
+// height || height === 0 ? console.log('Variable is defined') : console.log('Variable is not defined');
+
+/*
+function noPlay (gender, age) {
+        if (gender === 'female' || age < 16) {
+                console.log('You are not eligible to participate!');
+        }else {
+            console.log('Find this player a team!')
+        };            
+};
+
+console.log(noPlay('female', 21));
+
+function calculateAge(birthYear) {
+        return 2018 - birthYear;    
+}
+
+let ageJohn = calculateAge(1981);
+let ageMike = calculateAge(1972);
+let ageJane = calculateAge(1954);
+
+console.log(ageJohn, ageMike, ageJane  );
+
+
+function yearsToRetirement(year, firstName) {
+    let age = calculateAge(year);
+    let retirement = 65 - age;
+        
+    if (retirement > 0) {
+        console.log(firstName + ' ' + 'retires in' + ' ' + retirement + ' years.' );
+    }else {
+        console.log(firstName + ' ' + 'is already retired.');
+    }
+};
+
+yearsToRetirement(1990, 'Wes');
+yearsToRetirement(1945, 'Meg');
+yearsToRetirement(2020, 'Ali');
+
+//Function Expressions
+
+let whatDoYouDo = function(job, firstName) {
+    switch(job) {
+        case 'teacher':
+            return firstName + ' teaches Kids to code.'
+        case 'driver':
+            return firstName + ' drives cabs in Lisbon.'
+        case 'designer':
+            return firstName + ' design websites.'
+        default:
+            return firstName + ' does something else.'
+    };
+};
+
+console.log(whatDoYouDo('teacher', 'Barry'));
+console.log(whatDoYouDo('Driver', 'Kate'));
+console.log(whatDoYouDo('muppett', 'Warren'));
+*/
+
+/***************
+ * Arrays
+ */
+
+ 
