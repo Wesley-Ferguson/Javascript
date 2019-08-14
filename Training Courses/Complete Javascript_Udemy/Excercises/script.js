@@ -250,6 +250,7 @@ console.log(whatDoYouDo('muppett', 'Warren'));
  * Arrays
  */
 
+ /*
  let names = ['Mike', 'John', 'Jane'];
  let year = [1990, 2001, 2016];
 
@@ -276,3 +277,88 @@ console.log(john.indexOf('Smith'));
 let isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer.' : 'John IS a designer.';
 
 console.log(isDesigner);
+
+*/
+
+/***************
+ * Objects & Methods
+ */
+
+ const wes = {
+        firstName: 'Wesley',
+        midName: 'Richard',
+        lastName: 'Ferguson',
+        family: ['Mike', 'Elize', 'Meg'],
+        isMarried: false,
+        birthYear: 1981,
+    //Methods
+        calcAge: function() {
+            this.age = 2019- this.birthYear;
+        },
+ };
+
+wes.calcAge();
+wes.isMarried = true;
+wes.family = wes.family.unshift('Milo');
+console.log(wes);
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************PRACTICE******* */
+
+//ARRAYS
+
+// let rvtFiles = [];
+
+// rvtFiles.push('First file', 'Second File');
+
+// console.log(rvtFiles);
+
+// rvtFiles.pop();
+// rvtFiles.unshift(1);
+
+// console.log(rvtFiles);
+
+//FUNCTIONS
+
+// const rvtFiles = (ar_file, se_file) => {
+//     if(ar_file != se_file) {
+//         console.log('Se cannot be loaded');
+//     }else {
+//         console.log('AR & Se are merged')
+//     };
+
+//     return console.log('Model coordination complete');
+// };
+
+// rvtFiles('AR_1', 'AR_1');

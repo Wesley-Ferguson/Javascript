@@ -1,5 +1,5 @@
 /************
- * Wes solution
+ * Wes solution - To much repetition!!!!!!!!!!!!
  
 // Array containg the bills.
 let bills = [124, 48, 268];
@@ -41,6 +41,7 @@ console.log(tips);
 console.log(billTotals);
 */
 
+/****************** 
 // Alternate solution 1
 
 function tipCalc(bill) {
@@ -67,5 +68,42 @@ let billTotal = [bill[0] + tips[0],
 
 console.log(tips);
 console.log(billTotal);
+
+*/
+
+/****************** 
+// Alternate solution 2 (Switch)
+*/
+
+function tipCalc(bill) {
+    let perc;
+    switch(bill) {
+        case bill < 50:
+                perc = 0.2 * bill;
+        case bill > 50 && bill < 200:
+                perc = 0.15 * bill;
+        default:
+                perc = 0.1 * bill;
+    };
+
+    return perc + bill;
+};
+
+let bill = [124, 48, 268];
+let tips = [tipCalc(bill[0]),
+            tipCalc(bill[1]),
+            tipCalc(bill[2])];
+
+let billTotal = [bill[0] + tips[0],
+                bill[1] + tips[1],
+                bill[2] + tips[2]];
+
+console.log(tips);
+console.log(billTotal);
+
+
+
+
+
 
 
