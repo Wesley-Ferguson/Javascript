@@ -282,7 +282,6 @@ console.log(isDesigner);
 
 /***************
  * Objects & Methods
- */
 
  const wes = {
         firstName: 'Wesley',
@@ -301,9 +300,27 @@ wes.calcAge();
 wes.isMarried = true;
 wes.family = wes.family.unshift('Milo');
 console.log(wes);
+*/
 
+/************
+ * Loops & Iteration
+ */
  
+//  for(i = 1; i < 20; i +=2) {
+//      console.log(i);
+//  };
 
+ let john = ['John', 'Smith', 1990, 'teacher', false]
+
+ for(let i = 0; i < john.length; i++) {
+    if(typeof john[i] !== 'string') break;
+     console.log(john[i]);
+ };
+
+for(let i = (john.length-1); i >= 0; i --) {
+    if(typeof john[i] === 'string') continue;
+        console.log(john[i]);
+}
 
 
 
